@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -12,5 +13,7 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
+  currentTime := time.Now()
+  fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
+  fmt.Fprintf(w, "Current Time in String: %q\n", currentTime.String())
 }
