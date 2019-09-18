@@ -8,8 +8,6 @@ import (
 	"time"
 )
 
-//TEST FOR MERGE COMMIT
-
 func main() {
 	http.HandleFunc("/time", handler) // each request calls handler
 	log.Fatal(http.ListenAndServe("localhost:8795", nil))
