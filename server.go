@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-//TEST FOR MERGE COMMIT
+//TEST FOR MERGE COMMIT SECOND MERGE
 
 func main() {
 	http.HandleFunc("/time", handler) // each request calls handler
