@@ -14,6 +14,5 @@ func main() {
 
 func handler(w http.ResponseWriter, r *http.Request) {
   currentTime := time.Now()
-  fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
-  fmt.Fprintf(w, "Current Time in String: %q\n", currentTime.String())
+  fmt.Fprintf(w, currentTime.String())
 }
